@@ -21,7 +21,7 @@
 		$('.serviceTitle h3').not( $(this) ).removeClass('open');
 	});
 	
-	$('.bio > .et_pb_text_inner').prepend('<span class="closeButton"><img src="https://sanitecltd.build/wp-content/themes/sanitec/assets/img/icons/close-white.png"></span>');
+	$('.bio > .et_pb_text_inner').prepend('<span class="closeButton"><img src="../../wp-content/themes/sanitec/assets/img/icons/close-white.png"></span>');
 	
 	$('.closeButton').click(function() {
 		$(this).parent().parent().fadeOut();
