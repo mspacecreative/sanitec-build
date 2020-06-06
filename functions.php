@@ -14,7 +14,7 @@ function my_theme_enqueue_styles() {
 	wp_register_style('animations', get_stylesheet_directory_uri() . '/assets/css/animations.css', array(), '1.0', 'all');
 	wp_enqueue_style('animations');
 	
-	wp_register_style('typekit', 'https://use.typekit.net/izp1qav.css', array(), '1.0', 'all');
+	wp_register_style('typekit', 'https://use.typekit.net/msp0gmv.css', array(), '1.0', 'all');
 	wp_enqueue_style('typekit');
 	
 	wp_register_style('main', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), null, 'all');
