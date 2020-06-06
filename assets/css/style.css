@@ -132,7 +132,6 @@ h3 {
 }
 
 .et_pb_column {
-	position: static;
 	z-index: 1;
 }
 
@@ -213,4 +212,12 @@ h3 {
 	width: 100%;
 	content: "";
 	background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 70%);
+}
+
+.ctaBox::before {
+	content: "";
+	background-image: url(../img/textures/just-waves.png);
+	top: 0;
+	left: 0;
+	position: absolute;
 }
