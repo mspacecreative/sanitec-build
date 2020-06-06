@@ -1,0 +1,50 @@
+h1 {
+	margin-bottom: 30px;
+	padding-bottom: 0;
+}
+h3 {
+	line-height: 1.5em;
+}
+
+// SERVICES SECTION
+#services .et_pb_module {
+	margin-bottom: 0;
+}
+#services h3 {
+	font-size: 18px;
+	text-align: left;
+	display: block;
+}
+#services .serviceTitle:last-of-type h3 {
+	border-bottom: none;
+}
+.et_pb_slide p {
+	color: #000;
+}
+.serviceTitle h3 {
+	position: relative;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	display: inline-block;
+	border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+#services .serviceTitle:last-of-type h3.open {
+	border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+.serviceTitle h3::after {
+	position: absolute;
+	right: 0;
+	top: 1em;
+	content: "\F107";
+	font-family: fontAwesome;
+	transition: 0.25s ease-in-out;
+}
+.serviceTitle h3.open::after {
+	transition: 0.25s ease-in-out;
+	transform: rotate(180deg);
+}
+.servicesContainer {
+	padding: 0.5em 2em;
+    border: 1px solid rgba(255,255,255,.25);
+}

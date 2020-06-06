@@ -1,0 +1,30 @@
+#services::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	content: "";
+	background-color: rgba(0, 87, 149, .90);
+}
+#services::after {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    content: "";
+    background: linear-gradient(0deg, transparent,rgba(0, 87, 149, .90));
+}
+#services .et_pb_row {
+	z-index: 1;
+}
+.hero::before {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    content: "";
+	background: linear-gradient(0deg, transparent, rgba(255,255,255,.8) 70%);
+}
