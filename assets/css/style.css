@@ -96,6 +96,7 @@ h3 {
 	height: 100%;
 	background-color: rgba(0, 179, 240, 0.95);
 	z-index: 11;
+	overflow: auto;
 }
 
 .serviceBlurb {
