@@ -43,8 +43,8 @@
 	position: absolute;
 	top: -25px;
 	right: -25px;
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	cursor: pointer;
 }
 .testimonialsSlider .et-pb-controllers {
@@ -73,5 +73,14 @@
 		left: 0;
 		transform: none;
 		width: 100%;
+	}
+	.closeButton {
+		top: 10px;
+		right: 10px;
+	}
+}
+@media (max-width: 450px) {
+	.closeButton {
+		position: fixed;
 	}
 }
