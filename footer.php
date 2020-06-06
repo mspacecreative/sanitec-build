@@ -52,7 +52,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 					}
 
 					// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo __('&copy; '); date('Y'); bloginfo('name'); __('. All rights reserved.'); 
+					echo _e('&copy; '); echo date('Y'); bloginfo('name'); _e('. All rights reserved.'); 
 					// phpcs:enable
 				?>
 					</div>	<!-- .container -->
