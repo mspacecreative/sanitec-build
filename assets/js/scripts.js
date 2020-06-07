@@ -34,7 +34,7 @@
 	// SMOOTH SCROLL
 	// Select all links with hashes
 	$('.mobile-nav a[href*=\\#]').click(function() {
-		$('body, #page-container').toggleClass('is-active');
+		$('body, .hamburger, #page-container').toggleClass('is-active');
 	});
 	
 })(jQuery);
