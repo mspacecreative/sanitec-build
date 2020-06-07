@@ -31,16 +31,19 @@
 		});
 	});
 	
-	/*
-	var serviceBlurb = $('.serviceBlurb'),
-		serviceInnerHeight = $('.serviceBlurb > .et_pb_text_inner').height(),
-		blurbTotalHeight = serviceBlurb.height(serviceInnerHeight),
-		containerHeight = $('#services').height(),
-		changeInHeight = blurbTotalHeight + containerHeight;
-		if ( $('body').hasClass('open') ) {
-			$('#services').css({
-				'height' : '567px',
-			});
-		}*/
+	// SMOOTH SCROLL
+	// Select all links with hashes
+	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top - 50
+				}, 1000);
+	        return false;
+			}
+	    }
+	});
 	
 })(jQuery);
