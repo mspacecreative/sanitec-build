@@ -15,9 +15,25 @@
 	background-color: #fff;
 }
 
+.et_pb_svg_logo #logo, .et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo {
+	height: 100%;
+}
+
 @media (max-width: 980px) {
 	.et_fixed_nav #main-header {
 		position: fixed;
+	}
+	
+	.et_header_style_left #logo, .et_header_style_split #logo {
+		max-width: 100%;
+	}
+	
+	.logo_helper {
+		display: inherit;
+	}
+	
+	.et_pb_pagebuilder_layout.et_header_style_left .logo_container, .et_header_style_left .logo_container {
+		width: 150px;
 	}
 }
 
