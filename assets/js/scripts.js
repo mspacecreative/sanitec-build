@@ -11,6 +11,10 @@
 			$('#main-header').css({
 				'opacity' : '0',
 			});
+			$('.hamburger').css({
+				'opacity' : '0',
+				'visibility' : 'hidden',
+			});
 		}
 	});
 	
