@@ -27,7 +27,10 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+<?php
+	$product_tour_enabled = et_builder_is_product_tour_enabled();
+	$page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : ''; ?>
+	<div id="page-container"<?php echo et_core_intentionally_unescaped( $page_container_style, 'fixed_string' ); ?>>
 <?php
 	if ( $product_tour_enabled || is_page_template( 'page-template-blank.php' ) ) {
 		return;
@@ -346,9 +349,7 @@
 		 * @param string $main_header
 		 */
 		echo et_core_intentionally_unescaped( apply_filters( 'et_html_main_header', $main_header ), 'html' );
-	$product_tour_enabled = et_builder_is_product_tour_enabled();
-	$page_container_style = $product_tour_enabled ? ' style="padding-top: 0px;"' : ''; ?>
-	<div id="page-container"<?php echo et_core_intentionally_unescaped( $page_container_style, 'fixed_string' ); ?>>
+	?>
 		<div id="et-main-area">
 	<?php
 		/**
