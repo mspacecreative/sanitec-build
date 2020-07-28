@@ -52,7 +52,7 @@
 		if (event.keyCode == 27) { 
 			$('.bio').fadeOut();
 			
-			$('#main-header').fadeIn();
+			$('body').removeClass('open');
 		}
 	});
 	
