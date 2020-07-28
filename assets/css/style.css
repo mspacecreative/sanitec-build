@@ -126,6 +126,14 @@ h3 {
 	font-size: 13px;
 }
 
+.testimonialsSlider p {
+	font-style: italic;
+}
+
+.testimonialsSlider p:first-of-type {
+	font-style: normal;
+}
+
 .bio {
 	position: fixed;
 	top: 0;
