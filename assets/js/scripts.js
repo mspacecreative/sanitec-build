@@ -8,14 +8,13 @@
 		$('body').toggleClass('open');
 		
 		if ( $('body').hasClass('open') ) {
-			$('#main-header').css({
-				'opacity' : '0',
-				'visibility' : 'hidden',
-			});
+			$('#main-header').fadeOut();
 			$('.hamburger').css({
 				'opacity' : '0',
 				'visibility' : 'hidden',
 			});
+		} else {
+			$('#main-header').fadeIn();
 		}
 	});
 	
