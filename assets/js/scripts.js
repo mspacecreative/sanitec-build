@@ -87,10 +87,10 @@
 	
 	// ADD TAB INDEX ATTRIBUTE TO MENU ITEMS
 	$('.menu-item').each(function() {
-		$(this).attr('tabindex', 0);
+		$(this).attr('tabindex', -1);
 	});
 	$('.menu-item > a').each(function() {
-		$(this).attr('tabindex', 1);
+		$(this).attr('tabindex', 0);
 	});
 	
 })(jQuery);
