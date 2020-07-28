@@ -1,15 +1,10 @@
-let mouseDown = false;
-
-element.addEventListener('mousedown', () => {
-  mouseDown = true;
-});
-
-element.addEventListener('mouseup', () => {
-  mouseDown = false;
-});
-
-element.addEventListener('focus', (event) => {
-  if (mouseDown) {
-    event.target.blur();
+function keyboardFocus (e) {
+  if (e.keyCode === 9) { // Tab key
+    document.documentElement.classList.add('keyboard-focus');
   }
-});
+
+  document.removeEventListener('keydown', keyboardFocus, false);
+}
+
+document.documentElement.classList.remove('no-js');
+document.addEventListener('keydown', keyboardFocus, false);
