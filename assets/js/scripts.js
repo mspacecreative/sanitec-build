@@ -8,13 +8,23 @@
 		$('body').toggleClass('open');
 		
 		if ( $('body').hasClass('open') ) {
-			$('#main-header').fadeOut();
+			$('#main-header').css({
+				'opacity' : '0',
+				'visibility' : 'hidden',
+			});
 			$('.hamburger').css({
 				'opacity' : '0',
 				'visibility' : 'hidden',
 			});
 		} else {
-			$('#main-header').fadeIn();
+			$('#main-header').css({
+				'opacity' : '1',
+				'visibility' : 'visible',
+			});
+			$('.hamburger').css({
+				'opacity' : '1',
+				'visibility' : 'visible',
+			});
 		}
 	});
 	
@@ -51,7 +61,7 @@
 		if (event.keyCode == 27) { 
 			$('.bio').fadeOut();
 			
-			$('main-header').fadeIn();
+			$('body').removeClass('open');
 		}
 	});
 	
