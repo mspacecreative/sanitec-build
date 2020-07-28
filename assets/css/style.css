@@ -134,6 +134,10 @@ h3 {
 	font-style: normal;
 }
 
+a::focus {
+	outline: navy;
+}
+
 .bio {
 	position: fixed;
 	top: 0;
