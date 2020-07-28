@@ -134,7 +134,7 @@ h3 {
 	font-style: normal;
 }
 
-.menu-item > a:focus {
+.menu-item:focus > a {
 	outline: 2px solid #51a7e8;
 }
 
