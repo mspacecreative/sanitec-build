@@ -31,6 +31,9 @@ function footer_scripts() {
 	wp_register_script('animate', get_stylesheet_directory_uri() . '/assets/js/css3-animate-it.js', array('jquery'), null, true);
 	wp_enqueue_script('animate');
 	
+	wp_register_script('focus', get_stylesheet_directory_uri() . '/assets/js/focus.js', array('jquery'), null, true);
+	wp_enqueue_script('focus');
+	
 	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
 	wp_enqueue_script('fontawesome');
 	
