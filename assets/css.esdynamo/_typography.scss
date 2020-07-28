@@ -64,6 +64,6 @@ h3 {
 .menu-item:focus > a {
 	outline: 2px solid #51a7e8;
 }
-.menu-item:focus > a, .menu-item > a:focus {
+.menu-item:focus, .menu-item > a:focus {
 	outline: none;
 }
