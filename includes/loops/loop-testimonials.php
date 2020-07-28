@@ -21,7 +21,7 @@ if ( $loop->have_posts() ) : ?>
 				echo '<h3>' . $title . '</h3>';
 			}
 			if ( $company ) {
-				echo '<p>' . $company . '<p>';
+				echo '<p class="companyName>' . $company . '<p>';
 			}
 			if ( $content ) {
 				echo $content;

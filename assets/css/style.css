@@ -130,7 +130,7 @@ h3 {
 	font-style: italic;
 }
 
-.testimonialsSlider p:first-of-type {
+.testimonialsSlider p.companyName {
 	font-style: normal;
 }
 
