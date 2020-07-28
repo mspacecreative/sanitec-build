@@ -135,7 +135,7 @@ h3 {
 }
 
 *:focus {
-	outline: 1px solid #333;
+	outline: 2px solid #333;
 }
 
 .bio {
