@@ -138,6 +138,10 @@ h3 {
 	outline: 2px solid #51a7e8;
 }
 
+.menu-item:focus, .menu-item > a:focus {
+	outline: none;
+}
+
 .bio {
 	position: fixed;
 	top: 0;
