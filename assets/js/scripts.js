@@ -85,4 +85,9 @@
 		}
 	});
 	
+	// ADD TAB INDEX ATTRIBUTE TO MENU ITEMS
+	$('.menu-item').each(function() {
+		$(this).attr('tabindex', 0);
+	});
+	
 })(jQuery);
