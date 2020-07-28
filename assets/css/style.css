@@ -134,7 +134,7 @@ h3 {
 	font-style: normal;
 }
 
-.keyboard-focus:focus {
+.keyboard-focus *:focus {
 	outline: 1px dotted #333;
 }
 
