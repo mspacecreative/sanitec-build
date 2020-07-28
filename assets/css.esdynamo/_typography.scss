@@ -61,9 +61,6 @@ h3 {
 .testimonialsSlider p.companyName {
 	font-style: normal;
 }
-.menu-item:focus > a {
-	outline: 2px solid #51a7e8!important;
-}
-.menu-item:focus, .menu-item > a:focus {
-	outline: none;
+.menu-item > a:focus {
+	outline: 2px solid #51a7e8;
 }
