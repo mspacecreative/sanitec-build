@@ -47,4 +47,11 @@
 		$('body, .hamburger, #page-container').toggleClass('is-active');
 	});
 	
+	// EXIT MODAL ON ESCAPE
+	$(document).keydown(function(event) { 
+		if (event.keyCode == 27) { 
+			$('.bio').fadeOut();
+		}
+	});
+	
 })(jQuery);
