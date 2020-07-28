@@ -61,7 +61,27 @@
 		if (event.keyCode == 27) { 
 			$('.bio').fadeOut();
 			
-			$('body').removeClass('open');
+			$('body').toggleClass('open');
+			
+			if ( $('body').hasClass('open') ) {
+				$('#main-header').css({
+					'opacity' : '0',
+					'visibility' : 'hidden',
+				});
+				$('.hamburger').css({
+					'opacity' : '0',
+					'visibility' : 'hidden',
+				});
+			} else {
+				$('#main-header').css({
+					'opacity' : '1',
+					'visibility' : 'visible',
+				});
+				$('.hamburger').css({
+					'opacity' : '1',
+					'visibility' : 'visible',
+				});
+			}
 		}
 	});
 	
